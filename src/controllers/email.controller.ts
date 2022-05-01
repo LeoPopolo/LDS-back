@@ -3,7 +3,9 @@ import { transporter } from '../config/mailer';
 
 export async function sendMail(req: Request, res: Response) {
 
-    let tmp_name = req.file?.filename ? req.file.filename : req.file?.name;
+    console.log(req);
+
+    let tmp_name = req.file?.filename ? req.file.filename : "file - " + new Date();
 
     await transporter.sendMail({
         from: '"Inscripcion LDS" <leopopolo98@gmail.com>',
