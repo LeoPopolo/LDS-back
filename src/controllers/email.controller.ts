@@ -5,7 +5,7 @@ export async function sendMail(req: Request, res: Response) {
 
     await transporter.sendMail({
         from: '"Inscripcion LDS" <leopopolo98@gmail.com>',
-        to: "leopopologuitarreta@gmail.com",
+        to: "liricadelossantos@gmail.com",
         subject: "Nueva inscripción a LDS",
         html: `
             <p>Inscripcion a Lirica del los santos</p>
