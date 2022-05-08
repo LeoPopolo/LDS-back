@@ -16,7 +16,7 @@ export async function sendMail(req: Request, res: Response) {
             </br>
             <p>Iglesia: ${req.body.church}</p>
             </br>
-            <p>Lider: ${req.body.leader}</p>
+            <p>Líder: ${req.body.leader}</p>
             </br>
             <p>Edad: ${req.body.age}</p>
             </br>
