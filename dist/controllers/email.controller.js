@@ -15,7 +15,7 @@ function sendMail(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         yield mailer_1.transporter.sendMail({
             from: '"Inscripcion LDS" <leopopolo98@gmail.com>',
-            to: "leopopologuitarreta@gmail.com",
+            to: "liricadelossantos@gmail.com",
             subject: "Nueva inscripción a LDS",
             html: `
             <p>Inscripcion a Lirica del los santos</p>
@@ -29,6 +29,8 @@ function sendMail(req, res) {
             <p>Lider: ${req.body.leader}</p>
             </br>
             <p>Edad: ${req.body.age}</p>
+            </br>
+            <p>Teléfono: ${req.body.phone}</p>
             </br>
             <p>Redes sociales: ${req.body.social}</p>
         `,
